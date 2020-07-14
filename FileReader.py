@@ -1,12 +1,8 @@
 
 import pandas as pd
 
-read_file = pd.read_excel (r'Path where the Excel file is stored\File name.xlsx')
-read_file.to_csv (r'Path to store the CSV file\File name.csv', index = None, header=True)
-
-
-
-
+read_file = pd.read_excel (r'/Users/quinn/Desktop/01_Desktop/02 Projects/CueIt/EBTYH Kylie Music EDL.xlsx')
+read_file.to_csv (r'/Users/quinn/Desktop/01_Desktop/02 Projects/CueIt/input.csv', index = None, header=True)
 
 text = open("input.csv", "r")
 text = ''.join([i for i in text]).replace("_", " ") \
