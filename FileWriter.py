@@ -13,11 +13,11 @@ import csv
 #x = open("analysed.csv","w")
 #x.writelines(text)
 #x.close() 
-#
-libcolnames = ['PREFIX', 'LABEL']
+#                                                                    
+libcolnames = ['PREFIX', 'LABEL', 'PUBLISHER']
 data = pandas.read_csv('MusicLibraries.csv', names=libcolnames, skiprows=[0])
 #
-fincolnames = ['composer', 'trackID', 'trackNumber', 'duration', 'publisher']
+fincolnames = ['composer', 'trackID', 'trackNumber', 'duration', 'record-label', 'publisher']
 finalData = pandas.read_csv('processed_batch.csv', names=fincolnames, skiprows=[0])
 #
 for e in range(len(finalData)):
@@ -25,6 +25,7 @@ for e in range(len(finalData)):
     for i in range (len(data['PREFIX'])):
         if re.match(str(data['PREFIX'][i]), str(me)):
             
-         finalData['publisher'][e] = (str(data['LABEL'][i]))
+         finalData['record-label'][e] = (str(data['LABEL'][i]))
+         finalData['publisher'][e] = (str(data['PUBLISHER'][i]))
 #
 finalData.to_csv('final.csv')        
