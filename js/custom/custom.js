@@ -18,6 +18,7 @@
 
     });
 
+
     $(document).ready(function() {
 
         var header             = $('.header'),

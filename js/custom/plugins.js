@@ -7,7 +7,12 @@
  * Copyright (c) 2012 Alexander Brovikov
  * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
  */
-(function($) {
+
+
+
+ $('.file-upload').file_upload();
+
+ (function($) {
     $.fn.appear = function(fn, options) {
 
         var settings = $.extend({
