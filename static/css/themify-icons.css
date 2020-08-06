@@ -220,6 +220,7 @@
 }
 .ti-cup:before {
 	content: "\e641";
+	color: #FFFF;
 }
 .ti-crown:before {
 	content: "\e642";

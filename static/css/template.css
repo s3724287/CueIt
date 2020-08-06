@@ -5325,7 +5325,7 @@ tbody.collapse.show {
 .card-header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-color: rgba(0, 0, 0, .03);
+    background-color: rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
@@ -11417,7 +11417,7 @@ img.img-shadow,
 .icon-box .icon-box-icon {
     font-size: 2.0rem;
     margin: 0 0 10px;
-    color: #505cfd;
+    color: #ffffff;
     transition: all .3s ease-in-out;
 }
 
@@ -12532,12 +12532,12 @@ img.img-shadow,
 
 .header,
 .header.header-small {
-    background: #A9A9A9;
+    background: #ffffff00;
 }
 
 .header .inner-brand,
 .header.header-small .inner-brand {
-    color: #A9A9A9;
+    color: #ffffff00;
 }
 
 .header .inner-brand .brand-dark,
@@ -12554,7 +12554,7 @@ img.img-shadow,
 .header .inner-nav > ul > li > a,
 .header.header-small .extra-nav > ul > li > a,
 .header.header-small .inner-nav > ul > li > a {
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 .header .extra-nav > ul > li > a:hover,
@@ -12596,7 +12596,7 @@ img.img-shadow,
     .header,
     .header.header-small,
     .header.header-transparent {
-        background: #A9A9A9;
+        background: #FFFFFF;
         border-bottom: 1px solid rgba(240, 240, 240, .8);
         bottom: 10px;
     }
