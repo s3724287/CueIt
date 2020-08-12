@@ -10,7 +10,13 @@ import string
 #
 
 list = ['CLIP_NAME', 'DURATION']
+
+
+
+
 read_file = pandas.read_excel ('/Users/quinn/Desktop/01_Desktop/02 Projects/CueIt/_Planet A Ep 1 COVID music EDL.xlsx', usecols=list)
+
+
 read_file.to_csv ('/Users/quinn/Desktop/01_Desktop/02 Projects/CueIt/input.csv', index = None, header=True)
 text = open("/Users/quinn/Desktop/01_Desktop/02 Projects/CueIt/input.csv", "r")
 text = ''.join([i for i in text]).replace("_", " ") \

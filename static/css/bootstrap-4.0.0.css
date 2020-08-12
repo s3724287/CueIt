@@ -3791,6 +3791,7 @@ tbody.collapse.show {
   height: calc(2.25rem + 2px);
   margin: 0;
   opacity: 0;
+  cursor: pointer;
 }
 
 .custom-file-input:focus ~ .custom-file-control {
